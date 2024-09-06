@@ -13,13 +13,16 @@
       .mySlides {
         display: none
       }
-      img {
-        vertical-align: middle;
-      }
       .slideshow-container {
-        max-width: 600px;
-        position: relative;
-        margin: auto;
+      max-width: 960px; /* ขนาดกว้างสูงสุดของ container */
+      max-height: 1320px; /* ขนาดสูงสุดของ container */
+      position: relative;
+      margin: auto;
+      overflow: hidden; /* ซ่อนส่วนที่เกินออกจาก container */
+      }
+      img {
+      width: 100%; /* ให้ภาพเต็มความกว้างของ container */
+      height: auto; /* รักษาสัดส่วนของภาพ */
       }
       /* Next & previous buttons */
       .prev,
